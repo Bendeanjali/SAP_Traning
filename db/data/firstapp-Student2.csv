@@ -1,0 +1,6 @@
+StudentId,StudentName,FatherName,MotherName,Phoneno,Fee,Currency,City,Country
+101,Anjali Sharma,Rajesh Sharma,Sunita Sharma,9876543210,25000.50,INR,Bangalore,India
+102,Rahul Verma,Amit Verma,Kavita Verma,9123456780,28000.00,INR,Chennai,India
+103,Priya Nair,Suresh Nair,Lakshmi Nair,9988776655,32000.75,INR,Kochi,India
+104,Arun Kumar,Ravi Kumar,Meena Kumar,9871234567,27500.00,INR,Hyderabad,India
+105,Sneha Reddy,Mahesh Reddy,Latha Reddy,9981122334,30000.00,INR,Mumbai,India

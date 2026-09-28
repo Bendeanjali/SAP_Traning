@@ -1,0 +1,6 @@
+StudentId,StudentName,FatherName,MotherName,Phoneno,Gender,drno,street,landmark,city,region,state,postal,country_code,currency_code,gross_frr,total_fee,tax,validFrom,validTo
+101,Anjali Sharma,Rajesh Sharma,Sunita Sharma,9876543210,F,12A,MG Road,Near Metro,Bangalore,South,Karnataka,560001,IN,INR,25000.00,28000.00,3000.00,2026-01-01T00:00:00Z,9999-12-31T23:59:59Z
+102,Rahul Verma,Amit Verma,Kavita Verma,9123456780,M,45,Anna Salai,LIC Building,Chennai,South,Tamil Nadu,600002,IN,INR,30000.00,33600.00,3600.00,2026-01-01T00:00:00Z,9999-12-31T23:59:59Z
+103,Priya Nair,Suresh Nair,Lakshmi Nair,9988776655,F,7,Marine Drive,Near Port,Kochi,South,Kerala,682001,IN,INR,28000.00,31360.00,3360.00,2026-01-01T00:00:00Z,9999-12-31T23:59:59Z
+104,Arun Kumar,Ravi Kumar,Meena Kumar,9871234567,M,10,Hitech City,Cyber Towers,Hyderabad,South,Telangana,500081,IN,INR,27000.00,30240.00,3240.00,2026-01-01T00:00:00Z,9999-12-31T23:59:59Z
+105,Sneha Reddy,Mahesh Reddy,Latha Reddy,9981122334,F,22,BKC,Near Jio World,Mumbai,West,Maharashtra,400051,IN,INR,35000.00,39200.00,4200.00,2026-01-01T00:00:00Z,9999-12-31T23:59:59Z

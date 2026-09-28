@@ -1,0 +1,4 @@
+Id,Title,Description,Privacy,UploadDate,View,ImagePath,album_Id,loc_Id,mem_Id
+1,Beach Sunset,Sunset at Marina Beach,Public,2025-01-10,500,/images/beach.jpg,1,1,1
+2,Family Dinner,Dinner with family,Private,2025-02-15,250,/images/dinner.jpg,2,2,2
+3,Green Hills,Beautiful hills view,Public,2025-03-20,800,/images/hills.jpg,3,3,3

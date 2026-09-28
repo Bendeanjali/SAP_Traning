@@ -1,0 +1,296 @@
+###
+http://localhost:4004/odata/v4/catalog/EmployeeSrv
+###
+
+###
+http://localhost:4004/odata/v4/catalog/ProductSrv
+
+###
+http://localhost:4004/odata/v4/catalog/AddressSrv
+
+###
+POST http://localhost:4004/odata/v4/catalog/createEmployee
+Content-Type: application/json
+
+ {
+    "Currency_code": "USA",
+     "ID": "2a5776ec-e711-4c11-a92a-2da5b46c40a9",
+     "accountNumber": "7833817281",
+     "bankId": "873892179",
+     "bankName": "Indian",
+     "email": "test@gmail.com",
+     "gender": "M",
+     "language": "E",
+     "loginName": "ANJU",
+     "nameFirst": "Bende",
+     "nameInitials": "B",
+     "nameLast": "Anjali",
+     "nameMiddle": "Anju",
+     "phoneNumber":  "9898989898",
+     "salaryAmount": "45000.00"
+ }
+
+###
+POST http://localhost:4004/odata/v4/catalog/createAddresses
+Content-Type: application/json
+
+{
+  "Node_key": "550e8400-e29b-41d4-a716-446655440001",
+  "Address_type": "HOME",
+  "Val_strt": "2024-01-01",
+  "Val_end": "2029-12-31",
+  "Latitude": 12.971599,
+  "Longitude": 77.594566
+}
+###
+POST http://localhost:4004/odata/v4/catalog/updateEmployee
+Content-Type: application/json
+
+{
+    "ID":"2a5776ec-e711-4c11-a92a-2da5b46c40a8",
+    "salaryAmount":"100000",
+    "Currency_code":"USD"
+}
+###
+POST http://localhost:4004/odata/v4/catalog/createProducts
+Content-Type: application/json
+
+{  
+  "Node_key": "550e8400-e29b-41d4-a716-446655440001",
+  "Product_Id": "PRD10001",
+  "Type_code": "FG",
+  "Category": "Electronics",
+  "Description": "Wireless Bluetooth Headphones",
+  "Tax_tarif_code": 1001,
+  "Measure_unit": "EA",
+  "Weight_measure": 0.45,
+  "Weight_unit": "KG",
+  "Price": 2499.99,
+  "Currency_code": "INR",
+  "Width": 18.50,
+  "Depth": 8.20,
+  "Height": 22.00,
+  "Dim_unit": "CM"
+}
+###
+POST http://localhost:4004/odata/v4/catalog/updateProducts
+Content-Type: application/json
+
+{
+    "Node_key": "550e8400-e29b-41d4-a716-446655440001",
+    "Weight_unit": "KG",
+    "Price": 500.99
+}
+###
+POST http://localhost:4004/odata/v4/catalog/deleteEmployee
+Content-Type: application/json
+
+{
+    "ID":"2a5776ec-e711-4c11-a92a-2da5b46c40a9"
+}
+
+
+
+###
+POST http://localhost:4004/odata/v4/catalog/updateProducts
+Content-Type: application/json
+
+{
+    "Node_key": "550e8400-e29b-41d4-a716-446655440001",
+    "Price": "2000.00",
+    "Currency_code": "USD"
+}
+###
+GET http://localhost:4004/odata/v4/examples/CustomerSrv
+###
+http://localhost:4004/odata/v4/examples/OrderSrv
+###
+http://localhost:4004/odata/v4/examples/OrderItemSrv
+
+###
+POST http://localhost:4004/odata/v4/examples/createCustomer
+Content-Type: application/json
+
+{
+    "CustomerID" :"550e8400-e29a-41d4-a716-446655440000",
+    "Name":"Ramu",
+    "City":"Hyd"
+}
+###
+POST http://localhost:4004/odata/v4/examples/createOrder
+Content-Type: application/json
+
+{
+    
+"orders" : [{
+    "OrderID": 456,
+"OrderDate": "2026-10-22"  },
+{
+    "OrderID": 4565878,
+"OrderDate": "2026-11-22"  },
+{
+    "OrderID": 6578,
+"OrderDate": "2020-09-01"  }
+
+
+]
+}
+
+###
+POST http://localhost:4004/odata/v4/examples/createOrderItem
+Content-Type: application/json
+
+{
+  "ItemID": "550e8400-e29b-41d4-a716-446655430010",
+  "Quantity": 5
+}
+
+###
+POST http://localhost:4004/odata/v4/examples/updateOrder
+Content-Type: application/json
+
+{
+    "OrderID": "550e8408-e29b-41d4-a716-446655440001",
+    "OrderDate": "2029-10-22" 
+}
+
+###
+POST http://localhost:4004/odata/v4/examples/deleteOrderItem
+Content-Type: application/json
+
+{
+  "ItemID": "550e8400-e29b-41d4-a716-446655430002"
+  
+}
+###
+GET  http://localhost:4004/odata/v4/examples/OrderSrv
+
+###
+
+###
+http://localhost:4004/odata/v4/catalog/ProductSrv/$count
+
+###
+http://localhost:4004/odata/v4/catalog/ProductSrv?$top=10&$skip=10
+
+###
+http://localhost:4004/odata/v4/catalog/AddressSrv?$orderby=City desc
+
+###
+http://localhost:4004/odata/v4/catalog/PurchaseOrderSrv?$select=Lifecycle,Overall
+
+###
+http://localhost:4004/odata/v4/catalog/PurchaseOrderSrv?$expand=Items
+
+###
+http://localhost:4004/odata/v4/catalog/BusinessPartnerSrv('74867AD200E41EDBA5D8B06885A56052')/Mobile/$value
+
+###
+http://localhost:4004/odata/v4/catalog/ProductSrv('74867AD200E41EDBA5D8B06885A56052')/Mobile/$value
+
+###
+PUT http://localhost:4004/odata/v4/catalog/EmployeeSrv/02BD2137-0890-1EEA-A6C2-BB55C19787FB
+Content-Type: application/json
+
+{
+    "salaryAmount":"105000.00",
+    "Currency_code":"USD"
+}
+###
+PUT http://localhost:4004/odata/v4/catalog/PurchaseOrderSrv/74867AD200E41EDBA5D8B0C98DC28052
+Content-Type: application/json
+
+{
+    "Gross_Amt":"19000",
+    "CURRENCY_code":"EUR"
+}
+###
+PUT http://localhost:4004/odata/v4/catalog/EmployeeSrv/02BD2137-0890-1EEA-A6C2-BB55C19807FB
+Content-Type: application/json
+
+{
+"phoneNumber": "+91155551234"
+}
+
+###
+PUT http://localhost:4004/odata/v4/catalog/BusinessPartnerSrv/74867AD200E41EDBA5D8B06885A58052
+Content-Type: application/json
+
+{
+"Company_name": ".-8cgdiksh"
+}
+###
+PUT http://localhost:4004/odata/v4/catalog/PurchaseItemSrv/74867AD200E41EDBA5D8B0CBD35A0052
+Content-Type: application/json
+
+{
+    "Po_Item": 15
+}
+###
+GET http://localhost:4004/odata/v4/catalog/getHighestSalaryEmployee
+###
+GET http://localhost:4004/odata/v4/catalog/getHighestPricedProduct
+
+###
+GET http://localhost:4004/odata/v4/catalog/EmployeeSrv
+###
+POST http://localhost:4004/odata/v4/catalog/EmployeeSrv
+Content-Type: application/json
+
+ {
+    "Currency_code": "USA",
+     "ID": "2a5776ec-e711-4c11-a92a-2da5b46c40a9",
+     "accountNumber": "7833817281",
+     "bankId": "873892179",
+     "bankName": "Indian",
+     "email": "test@gmail.com",
+     "gender": "M",
+     "language": "E",
+     "loginName": "ANJU",
+     "nameFirst": "Bende",
+     "nameInitials": "B",
+     "nameLast": "Anjali",
+     "nameMiddle": "Anju",
+     "phoneNumber":  "9898989898",
+     "salaryAmount": "45000.00"
+ }
+###
+GET http://localhost:4004/odata/v4/catalog/PurchaseOrderSrv
+###
+POST http://localhost:4004/odata/v4/catalog/PurchaseOrderSrv('74867AD200E41EDBA5D8B0C98DCD2052')/discountPrice
+
+###
+GET http://localhost:4004/odata/v4/catalog/PurchaseOrderSrv
+###
+GET http://localhost:4004/odata/v4/catalog/ProductSrv
+
+
+
+###
+GET http://localhost:4004/odata/v4/catalog/PurchaseOrderSrv/74867AD200E41EDBA5D8B0C98DC2E052/largestOrder()
+
+###
+POST http://localhost:4004/odata/v4/catalog/ProductSrv/550e8400-e29b-41d4-a716-446655440001/increasePrice
+
+###
+GET http://localhost:4004/odata/v4/catalog/ProductSrv('74867AD200E41EDBA5D8B06B26EB4052')/getTopProducts()
+
+###
+Post http://localhost:4004/odata/v4/catalog/ProductSrv('74867AD200E41EDBA5D8B06B26ED0052')/IncreasePrice
+
+###
+GET http://localhost:4004/odata/v4/catalog/ProductSrv('74867AD200E41EDBA5D8B06B26ED0052')/IncreasePrice
+
+###
+GET http://localhost:4004/odata/v4/catalog/EmployeeSrv
+
+###
+POST http://localhost:4004/odata/v4/catalog/EmployeeSrv('02BD2137-0890-1EEA-A6C2-BB55C19787FB')/increasedsalary
+
+###
+GET http://localhost:4004/odata/v4/catalog/EmployeeSrv('02BD2137-0890-1EEA-A6C2-BB55C19787FB')/top20employee
+
+###
+GET http://localhost:4004/odata/v4/catalog/getUtilities()
+
+
