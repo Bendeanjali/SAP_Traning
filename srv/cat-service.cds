@@ -26,7 +26,7 @@ service CatalogService {
     ReadRestrictions.Readable : true
     }*/
 
-    
+//start projecting the entities
     entity EmployeeSrv
 
         as projection on database.master.Employees{
